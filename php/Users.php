@@ -10,7 +10,7 @@
     if(mysqli_num_rows($sql) == 1) {
         $output .= 'No users available right now!';
     }elseif(mysqli_num_rows($sql) > 0) {
-        include_once 'data.php';
+        include_once 'Data.php';
     }elseif(mysqli_num_rows($sql) ==  $_SESSION['user_id']) {
     }
     echo $output;
